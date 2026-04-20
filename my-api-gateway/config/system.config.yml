@@ -1,0 +1,8 @@
+crypto:
+  cipherKey: secret-key-do-not-share
+  algorithm: aes256
+  saltRounds: 10
+db:
+  redis:
+    emulate: true
+    namespace: EG
