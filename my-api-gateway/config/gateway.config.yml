@@ -63,8 +63,8 @@ pipelines:
           - action: 
               headers: 
                 add: 
-                  X-Gateway: 'my-api-gateway' 
-                  X-Service: 'book-service' 
+                  X-Gateway: "'my-api-gateway'"
+                  X-Service: "'book-service'"
       - proxy:  
           - action: 
               serviceEndpoint: bookService 
