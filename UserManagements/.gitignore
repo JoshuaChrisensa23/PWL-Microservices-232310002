@@ -1,21 +1,71 @@
-# Ketergantungan (Dependencies)
+# =========================
+# ENV (PENTING BANGET)
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# NODE MODULES
+# =========================
 node_modules/
-package-lock.json
 
-# # Konfigurasi Environment & Rahasia (Sangat Penting!)
-# .env
-# .env.test
-# .env.production
-
-# Log files (Dibuat otomatis jika terjadi error)
+# =========================
+# LOG FILES
+# =========================
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Folder build / output (Jika nanti menggunakan Typescript atau build tools)
+# =========================
+# BUILD / DIST
+# =========================
 dist/
 build/
+coverage/
 
-# File sistem operasi (Otomatis terbuat oleh OS)
+# =========================
+# OS FILES
+# =========================
 .DS_Store
 Thumbs.db
+
+# =========================
+# IDE / EDITOR
+# =========================
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# TEMP FILES
+# =========================
+tmp/
+temp/
+
+# =========================
+# DOCKER (optional)
+# =========================
+docker-compose.override.yml
+
+# =========================
+# DATABASE / LOCAL FILES
+# =========================
+*.sqlite
+*.db
+
+# =========================
+# CERT / KEY (security)
+# =========================
+*.pem
+*.key
+*.crt
+
+# =========================
+# CACHE
+# =========================
+.cache/
+.next/
